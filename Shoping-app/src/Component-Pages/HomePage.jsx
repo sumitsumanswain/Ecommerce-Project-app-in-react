@@ -37,7 +37,7 @@ export function HomePage(){
 
     <div className="home-page">
       <div className="products-grid">
-        <div className="product-container">
+        <div className="product-container">   {/*product section like-> first probuct*/}
           <div className="product-image-container">
             <img className="product-image"
               src="images/products/athletic-cotton-socks-6-pairs.jpg" />
