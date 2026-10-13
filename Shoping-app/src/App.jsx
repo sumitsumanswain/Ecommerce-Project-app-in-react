@@ -2,7 +2,7 @@ import {Routes, Route} from 'react-router'; {/*create react-router pathe  */}
 import {HomePage} from './Component-Pages/HomePage';
 import {CheckoutPage} from './Component-Pages/Checkout/CheckoutPage';
 import {OrderPage} from './Component-Pages/OrderPage';
-import {TrackingPage} from './Component-Pages/Tracking';
+import {TrackingPage} from './Component-Pages/TrackingPage';
 import './App.css'
 
 function App() {
