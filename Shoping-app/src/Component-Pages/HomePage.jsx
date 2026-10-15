@@ -1,14 +1,18 @@
 import axios from 'axios';
+import {useEffect,useState} from 'react';
 import {Header} from '../components/Header';
 import CheckmarkIcon from '../assets/images/checkmark.png';
-import { products } from '../../../Starting-code/data/products.js';
 import './HomePage.css'
 export function HomePage(){
+  const [products,setProducts]= useState([]);
 
-  axios.get('http://localhost:3000/api/products')
-  .then((response)=> {
-     console.log(response.data);
-  })
+  useEffect(()=>{
+    axios.get('http://localhost:3000/api/products')
+      .then((response)=> {
+        setProducts(response.data);
+      });
+  }, []);
+  
 
   return(
     <>
@@ -39,7 +43,7 @@ export function HomePage(){
                   </div>
 
                   <div className="product-price">
-                    {(product.priceRupes/100).toFixed(2)}
+                    $ {(product.priceCents/100).toFixed(2)}
                   </div>
 
                   <div className="product-quantity-container">
