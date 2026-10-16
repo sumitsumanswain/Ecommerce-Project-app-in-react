@@ -4,13 +4,13 @@ import './TrackingPage.css';
 export function TrackingPage(){
   return(
     <>
-      <Header />
       <title>Tracking</title>
-      <link rel="icon" type="image/svg+xml" href="tracking-favicon.png" />
+      <link rel="icon" type="image/svg+xml" to="tracking-favicon.png" />
+      <Header />
 
       <div className="tracking-page">
         <div className="order-tracking">
-            <Link className="back-to-orders-link link-primary" href="/orders">
+            <Link className="back-to-orders-link link-primary" to="/orders">
               View all orders
             </Link>
 
