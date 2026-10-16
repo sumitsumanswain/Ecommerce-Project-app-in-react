@@ -1,9 +1,9 @@
 import {Routes, Route} from 'react-router'; {/*create react-router pathe  */}
 import {useEffect,useState} from 'react';
 import  axios  from "axios";
-import {HomePage} from './Component-Pages/HomePage';
+import {HomePage} from './Component-Pages/home/HomePage';
 import {CheckoutPage} from './Component-Pages/Checkout/CheckoutPage';
-import {OrderPage} from './Component-Pages/OrderPage';
+import {OrderPage} from './Component-Pages/orders/OrderPage';
 import {TrackingPage} from './Component-Pages/TrackingPage';
 import {NotFoundPage} from './Component-Pages/NotFoundpage';
 import './App.css'
