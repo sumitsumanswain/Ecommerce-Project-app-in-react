@@ -1,14 +1,14 @@
 import axios from 'axios';
 import {useEffect,useState} from 'react';
 
-import {CheckoutHeader} from './CheckoutHeader';
 import './CheckoutPage.css';
+import {CheckoutHeader} from './CheckoutHeader';
  
 import {OrderSummery} from './OrderSummery';
 import {PaymentSummary} from './PaymentSummary';
 export function CheckoutPage({cart}){
   const [deliveryOptions,setDeliveryOptions] = useState([]);
-  const [paymentSummary,setPaymentSummary] = useState([null]);
+  const [paymentSummary,setPaymentSummary] = useState(null);
 
   useEffect(()=>{
     const fatchChekoutData = async ()=>{
@@ -25,7 +25,7 @@ export function CheckoutPage({cart}){
 
     <>
       <title>Checkout</title>
-      <CheckoutHeader />
+      <CheckoutHeader cart={cart}/>
       <link rel="icon" type="image/svg+xml" href="/cart-favicon.png" />
 
        

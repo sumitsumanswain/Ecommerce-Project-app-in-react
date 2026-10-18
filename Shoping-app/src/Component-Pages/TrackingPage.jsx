@@ -1,12 +1,13 @@
 import {Header} from '../components/Header';
-import {Link} from 'react-router';
+import {Link,useParams} from 'react-router';
 import './TrackingPage.css';
-export function TrackingPage(){
+export function TrackingPage({cart}){
+  const { orderId, productId } = useParams();
   return(
     <>
       <title>Tracking</title>
-      <link rel="icon" type="image/svg+xml" to="tracking-favicon.png" />
-      <Header />
+      <link rel="icon" type="image/png" href="/tracking-favicon.png" />
+      <Header cart={cart}/>
 
       <div className="tracking-page">
         <div className="order-tracking">
@@ -15,11 +16,11 @@ export function TrackingPage(){
             </Link>
 
             <div className="delivery-date">
-              Arriving on Monday, June 13
+              Order ID: {orderId}
             </div>
 
             <div className="product-info">
-              Black and Gray Athletic Cotton Socks - 6 Pairs
+              Product ID: {productId}
             </div>
 
             <div className="product-info">
