@@ -1,6 +1,6 @@
 
 import dayjs from 'dayjs';
-export function DeliveryDate({cartitem,deliveryOptions}){
+export function DeliveryDate({cartitem,deliveryOptions,}){
    const selectedDeliveryOPtion = deliveryOptions.find((deliveryOption)=>{
             return deliveryOption.id === cartitem.deliveryOptionId;
           });

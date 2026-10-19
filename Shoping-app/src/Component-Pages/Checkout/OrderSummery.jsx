@@ -2,7 +2,7 @@
 import {DeliveryOption} from './DeliveryOptions';
 import {CartitemDetails} from './Cartitemdetails';
 import {DeliveryDate} from './Deliverydate';
-export function OrderSummery({cart,deliveryOptions}){
+export function OrderSummery({cart,deliveryOptions,loadCart}){
   return (
     <div className="order-summary">
       {deliveryOptions.length > 0 && cart.map((cartitem)=>{
@@ -18,7 +18,7 @@ export function OrderSummery({cart,deliveryOptions}){
     
                  
     
-                <DeliveryOption cartitem={cartitem} deliveryOptions={deliveryOptions}/>
+                <DeliveryOption cartitem={cartitem} deliveryOptions={deliveryOptions} loadCart={loadCart}/>
                 <CartitemDetails cartitem = {cartitem} />
                 <DeliveryDate cartitem={cartitem} deliveryOptions={deliveryOptions}/>
               </div>
