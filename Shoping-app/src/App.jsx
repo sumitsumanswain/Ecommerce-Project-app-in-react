@@ -11,6 +11,7 @@ import { TrackingPage } from "./Component-Pages/TrackingPage";
 import { NotFoundPage } from "./Component-Pages/NotFoundpage";
 import "./App.css";
 
+window.axios = axios;
 function App() {
   const [cart, setCart] = useState([]);
   const loadCart = async () => {
