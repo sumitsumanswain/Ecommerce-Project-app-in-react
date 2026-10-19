@@ -19,7 +19,7 @@ export function OrderSummery({cart,deliveryOptions,loadCart}){
                  
     
                 <DeliveryOption cartitem={cartitem} deliveryOptions={deliveryOptions} loadCart={loadCart}/>
-                <CartitemDetails cartitem = {cartitem} />
+                <CartitemDetails cartitem = {cartitem} loadCart={loadCart}/>
                 <DeliveryDate cartitem={cartitem} deliveryOptions={deliveryOptions}/>
               </div>
             </div>
