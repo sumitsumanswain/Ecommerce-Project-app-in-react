@@ -17,7 +17,7 @@ export function CartitemDetails({cartitem , loadCart}){
       await axios.put(`/api/cart-items/${cartitem.productId}`,{
         quantity: Number(quantity),
       });
-      
+
       await loadCart();
 
       setIsUpdatingQuantity(false);
@@ -28,6 +28,17 @@ export function CartitemDetails({cartitem , loadCart}){
   };
   const updateQuantityInput=(event)=>{
     setQuantity(event.target.value);
+  };
+
+  const handleQuantityKeyDown = (event) =>{
+    const keyPressed = event.key;
+
+    if(keyPressed === 'Enter'){
+      updateQuantity();
+    }else if(keyPressed === 'Escape'){
+      setQuantity(cartitem.quantity);
+      setIsUpdatingQuantity(false);
+    }
   };
   return (
     <>
@@ -42,7 +53,7 @@ export function CartitemDetails({cartitem , loadCart}){
           <span>
             Quantity:{isUpdatingQuantity 
               ?<input type='text' className='quantity-textbox' value={quantity}
-               onChange={updateQuantityInput}/>
+               onChange={updateQuantityInput} onKeyDown={handleQuantityKeyDown}/>
               :<span className="quantity-label">{cartitem.quantity}</span>
             }                          
           </span>
