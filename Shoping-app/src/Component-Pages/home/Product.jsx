@@ -60,7 +60,7 @@ export function Product({ product, loadCart }) {
         <img src={CheckmarkIcon} />
         Added
       </div>
-      <button className="add-to-cart-button button-primary" onClick={addTocart}>
+      <button className="add-to-cart-button button-primary" onClick={addTocart} data-testid="add-to-cart-button">
         Add to Cart
       </button>
     </div>

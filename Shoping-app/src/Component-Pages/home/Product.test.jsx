@@ -1,9 +1,11 @@
 import { it, expect, describe,vi } from "vitest";
 import { render,screen } from "@testing-library/react";
+import userEvent from '@testing-library/user-event';
+import axios from 'axios';
 import { Product } from "./Product";
 
 describe("Product component", () => {
-  it("displays the product details correctly", () => {
+  it("displays the product details correctly", async () => {
     const product = {
       id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
       image: "images/products/athletic-cotton-socks-6-pairs.jpg",
@@ -24,6 +26,18 @@ describe("Product component", () => {
     expect(
       screen.getByAltText('product-rating-stars-image')
     ).toBeInTheDocument('src','images/products/athletic-cotton-socks-6-pairs.jpg');
+    
     {/**you also cheke all the component-intigration test  */}
+    const user =userEvent.setup();
+    const addToCartButton = screen.getAllByAltText('add-to-cart-button')
+    await user.click(addToCartButton);
+
+    expect(axios.post).toHaveBeenCalledWith('/api/cart-items',
+      {
+        productId:'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+        quantity: 1
+      }
+    );
+    expect(loadCart).toHaveBeenCalled();
   });
 });
