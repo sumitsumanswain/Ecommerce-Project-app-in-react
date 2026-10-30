@@ -1,0 +1,4 @@
+
+    outDir: '../Ecommerce-backend/dist',
+  },
+});
