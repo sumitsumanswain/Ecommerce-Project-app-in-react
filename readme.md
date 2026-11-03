@@ -39,3 +39,6 @@ ORDER-PAGE =>
 CHEKOUT PAGE =>
 
 ![image alt](https://github.com/sumitsumanswain/Ecommerce-Project-app-in-react/blob/b809a91b8c4649c9df770faa8cb6b2ae4f136123/Ecommerce-chekout-page.png)
+
+TRACKING PAGE =>
+![image alt](https://github.com/sumitsumanswain/Ecommerce-Project-app-in-react/blob/94a5a8b0d025643c6e422acec6954ad07edc4e21/Ecommerce-Tracking-page.png)
