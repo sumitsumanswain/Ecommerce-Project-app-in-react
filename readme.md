@@ -28,6 +28,13 @@ A responsive e-commerce web app built with **React JS** and **TypeScript** also 
 3. TypeScript types keep the data safe and predictable.
 4. React renders the data as product cards on the page.
 
+🌐  If you test my code in you code editor then Download zip file in my **gitub** account past it .
+    Run the code in terminal command->
+
+➡️ go to project folder " cd Ecommerce-project-js " 
+➡️ then run code " npm run dev "
+
+
 HOME-PAGE =>
 
 ![image alt](https://github.com/sumitsumanswain/Ecommerce-Project-app-in-react/blob/8881cadda95f54243f29a5cfd45161243dac0244/Screenshot%20(50).png)
@@ -42,3 +49,8 @@ CHEKOUT PAGE =>
 
 TRACKING PAGE =>
 ![image alt](https://github.com/sumitsumanswain/Ecommerce-Project-app-in-react/blob/94a5a8b0d025643c6e422acec6954ad07edc4e21/Ecommerce-Tracking-page.png)
+
+
+NOT-FOUND-PAGE =>
+This page if you type any wrong **url** show the page not found.
+![image alt](https://github.com/sumitsumanswain/Ecommerce-Project-app-in-react/blob/acfadc59994bfcaaaa62fe18f119207e9cc3a484/Ecommerce-notfound-page.png)
