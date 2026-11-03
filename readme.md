@@ -31,7 +31,7 @@ A responsive e-commerce web app built with **React JS** and **TypeScript** also 
 🌐  If you test my code in you code editor then Download zip file in my **gitub** account past it .
     Run the code in terminal command->
 
-➡️ go to project folder " cd Ecommerce-project-js " 
+➡️ go to project folder " cd Ecommerce-project-js " <br>
 ➡️ then run code " npm run dev "
 
 
