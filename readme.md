@@ -34,4 +34,8 @@ HOME-PAGE =>
 
 ORDER-PAGE =>
 
+![image alt](https://github.com/sumitsumanswain/Ecommerce-Project-app-in-react/blob/d1762a201eb0c2cf4ec5bf061519ed497c44d2c1/Ecommerce-order-page.png)
+
+CHEKOUT PAGE =>
+
 ![image alt]()
