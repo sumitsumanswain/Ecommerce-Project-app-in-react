@@ -38,4 +38,4 @@ ORDER-PAGE =>
 
 CHEKOUT PAGE =>
 
-![image alt]()
+![image alt](https://github.com/sumitsumanswain/Ecommerce-Project-app-in-react/blob/b809a91b8c4649c9df770faa8cb6b2ae4f136123/Ecommerce-chekout-page.png)
